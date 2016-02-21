@@ -1,0 +1,22 @@
+body {
+  background: black;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+#range {
+  z-index: 100;
+  position: absolute;
+  top: 500px;
+  left: 50px;
+  width: 550px;
+}
+
+#range:active {
+  border: none;
+}

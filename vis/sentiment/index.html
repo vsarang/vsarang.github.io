@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="visualization.css">
+  </head>
+  <body>
+    <div id="greetings">
+      <div class="title">Email Sentiment</div>
+      <div class="seperator"></div>
+      <div id="button-auth"></div>
+    </div>
+    <div id="loading-screen">
+      <div class="content">
+        <div class="bar">
+          <div id="loading-bar" class="fill"></div>
+        </div>
+      </div>
+    </div>
+    <div id="thread-list"></div>
+    <div id="button-next-page"></div>
+    <div id="thread-vis">
+      <canvas id="canvas"></canvas>
+      <div id="button-back"></div>
+      <div class="title" id="main-title">Message Density (by user and hour)</div>
+      <div class="date" id="start-date"></div>
+      <div class="date" id="end-date"></div>
+    </div>
+  </body>
+</html>
+<script src="jquery-2.2.2.min.js"></script>
+<script src="api.js"></script>
+<script src="visualization.js"></script>
+<script src="view.js"></script>
+<script src="https://apis.google.com/js/client.js?onload=init"></script>

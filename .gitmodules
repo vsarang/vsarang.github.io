@@ -1,0 +1,3 @@
+[submodule "vis/live-notes"]
+	path = vis/live-notes
+	url = https://github.com/vsarang/live-notes.git

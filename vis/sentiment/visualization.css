@@ -1,0 +1,198 @@
+body {
+  font-family: Tahoma;
+}
+
+#greetings {
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+}
+
+#greetings.auth {
+  margin-top: 100px;
+}
+
+#greetings .title {
+  font-size: 150%;
+}
+
+#greetings .seperator {
+  margin: 10px auto;
+  height: 1px;
+  width: 300px;
+  background-color: black;
+}
+
+#greetings #button-auth {
+  display: none;
+  margin: 0 auto;
+  width: 200px;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #ddd;
+  border-radius: 2px;
+}
+
+#greetings #button-auth:after {
+  content: "Authorize Gmail";
+}
+
+#greetings #button-auth:hover {
+  cursor: pointer;
+}
+
+#button-next-page {
+  text-align: center;
+  display: none;
+  width: 100px;
+  margin: 20px auto;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  padding: 3px 5px;
+  cursor: pointer;
+}
+
+#button-next-page:after {
+  content: 'Load More';
+}
+
+#thread-list {
+  display: none;
+  width: 800px;
+  margin: 0 auto;
+}
+
+#thread-list .thread {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+  background-color: #9DCFFF;
+}
+
+#thread-list .thread:nth-child(2n) {
+  background-color: #D9ECFE;
+}
+
+#thread-list .thread .tooltip {
+  display: none;
+  position: absolute;
+  left: 100%;
+  white-space: nowrap;
+  padding-left: 5px;
+}
+
+#thread-list .thread .participant {
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  border-radius: 4px;
+  background-color: #E30601;
+  margin: 1px;
+}
+
+#thread-list .thread:hover .tooltip {
+  display: block;
+}
+
+#thread-list .thread .tooltip .messages:after {
+  content: ' messages';
+}
+
+#thread-list .thread .tooltip .participants:after {
+  content: ' participants';
+}
+
+#thread-list .thread .tooltip .date {
+  color: #888888;
+}
+
+#thread-list .thread .tooltip .date:before {
+}
+
+#loading-screen {
+  display: none;
+}
+
+#loading-screen .content {
+  margin: 15px auto 0;
+  width: 300px;
+  height: 200px;
+}
+
+#loading-screen .content .bar {
+  margin-top: 10px;
+  position: relative;
+  height: 20px;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#loading-screen .content .bar #loading-bar {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+#thread-vis {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 100%;
+  top: 0;
+  -webkit-transition: left 1s;
+  -moz-transition: left 1s;
+  transition: left 1s;
+  box-sizing: border-box;
+}
+
+#thread-vis.show {
+  left: 0;
+}
+
+#thread-vis #button-back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 40px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#thread-vis #button-back:hover {
+  color: #E30601;
+}
+
+#thread-vis #button-back:after {
+  content: '\00D7';
+}
+
+#thread-vis .title {
+  font-size: 30pt;
+  padding: 10px;
+}
+
+#thread-vis #main-title {
+  position: absolute;
+  top: 0;
+}
+
+#thread-vis .date {
+  position: absolute;
+  bottom: 0;
+  margin: 5px;
+  pointer-events: none;
+}
+
+#thread-vis #start-date {
+  left: 0;
+}
+
+#thread-vis #end-date {
+  right: 0;
+}
